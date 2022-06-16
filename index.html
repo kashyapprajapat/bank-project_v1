@@ -30,6 +30,20 @@
         </div>
        </form>
    </div> 
-   
+   <script>
+       function  sendData() {
+           var uname = $('#username').val();
+           var pword = $('#password').val();
+       
+       jsonObject={
+           "username":"",
+           "password":""
+       }
+       jsonObject.username=uname;
+       jsonObject.password=pword;
+       document.write(str);
+       var str=JSON.stringify(jsonObject);
+    }
+   </script>
 </body>
 </html>
